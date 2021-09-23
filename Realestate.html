@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>SriLaxmi Narasimha </span>RealEstate</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#agents">Agents</a>
+        <a href="#contact">Contact</a>
+    </nav>
+	 <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="loginpage.html" class="fas fa-user"></a>
+		<a href="#" class="fas fa-stream"></a>
+    </div>
+    
+</header>
+<style>
+.mySlides {display:none;}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="pic1.jpg" style="width:50%" height="400" align="center">
+  <img class="mySlides" src="pic2.jpg" style="width:50%" height="400" align="center">
+  <img class="mySlides" src="pic3.jpg" style="width:50%" height="400" align="center"> 
+  <img class="mySlides" src="pic4.jpg" style="width:50%" height="400" align="center">
+</div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<section class="home" id="home">
+
+    <form action="" class="container">
+
+        <h3>Find Your <span>DREAM</span> Home</h3>
+
+        <div class="buttons-container">
+            <a href="#" class="btn">Rent Purpose</a>
+            <a href="#" class="btn">Selling</a>
+			<a href="#" class="btn">Buying</a>
+        </div>
+
+        <div class="inputBox">
+            <input type="search" name="" placeholder="home,plot,villa,farm" id="">
+            <input type="search" name="" placeholder="city" id="">
+            <select name="" id="">
+                <option value="" disabled hidden selected>Minimum price</option>
+                <option value="5000 Rs">5000 Rs</option>
+                <option value="10000 Rs">10000 Rs</option>
+                <option value="15000 Rs">15000 Rs</option>
+                <option value="20000 Rs">20000 Rs</option>
+                <option value="25000 Rs">25000 Rs</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Maximum price</option>
+                <option value="30000 Rs">30000 Rs</option>
+                <option value="35000 Rs">35000 Rs</option>
+                <option value="40000 Rs">40000 Rs</option>
+                <option value="45000 Rs">45000 Rs</option>
+                <option value="50000 Rs">50000 Rs</option>
+            </select>
+			 <select name="" id="">
+                <option value="" disabled hidden selected>Property Status</option>
+                <option value="Ready To Move">Ready To Move</option>
+                <option value="Under construction">Under construction</option>
+                <option value="Furnished">Furnished</option>
+                <option value="Semi-furnished">Semi-furnished</option>
+                <option value="Unfurnished">Unfurnished</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Property Type</option>
+                <option value="Flat">Flat</option>
+                <option value="House">House</option>
+                <option value="Plot">Plot</option>
+                <option value="Farmhouse">Farmhouse</option>
+                <option value="Villa">Villa</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>BHK</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="4 BHK">4 BHK</option>
+                <option value="5 BHK">5 BHK</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Facilities</option>
+                <option value="Parking space">Parking space</option>
+                <option value="Swimming pool">Swimming pool</option>
+                <option value="Playground">Playground</option>
+                <option value="Security">Security</option>
+                <option value="all">all</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bedrooms</option>
+                <option value="1 bedroom">1 bedroom</option>
+                <option value="2 bedroom">2 bedroom</option>
+                <option value="3 bedroom">3 bedroom</option>
+                <option value="4 bedroom">4 bedroom</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bathroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+            </select>
+        </div>
+		<input type="Submit" value="Search Property" class="btn">
+
+    </form>
+   </section>
+   
+<!-- services block  -->
+<section class="services" id="services">
+
+    <h2 class="heading"> our <span>Services</span> </h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="bh.jfif" alt="">
+            <h3>buying</h3>
+            <p>the house you looked at today and wanted to think about until tommorow,may be the same house someone looked at yesterday and will buy today</p>
+            <a href="#" class="btn">buy</a>
+        </div>
+
+        <div class="box">
+            <img src="rh.jfif" alt="">
+            <h3>renting</h3>
+            <p>Service to others is the rent you pay for your room here on earth.</p>
+            <a href="#" class="btn">rent</a>
+        </div>
+
+        <div class="box">
+            <img src="s.jfif" alt="">
+            <h3>selling</h3>
+            <p>you can rent a house but you can only own a home</p>
+            <a href="#" class="btn">sell</a>
+        </div>
+
+    </div> 
+
+</section>
+
+<!-- services block -->
+<!-- agents section starts  -->
+
+<section class="agents" id="agents">
+
+    <h1 class="heading"> Professional <span>Agents</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fas fa-phone"></a>
+            <img src="agent2.png" alt="">
+            <h3>Raju</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fas fa-phone"></a>
+            <img src="agent4.png" alt="">
+            <h3>Radha</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fas fa-phone"></a>
+            <img src="agent3.png") alt="">
+            <h3>Vardhan</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fas fa-phone"></a>
+            <img src="agent.png" alt="">
+            <h3>Pinky</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--agents section ends -->
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> us </h1>
+
+<div class="icons-container">
+
+    <div class="icons">
+        <img src="icon1.png" alt="">
+        <h3>phone number</h3>
+        <p>+91 3983937044</p>
+        <p>+91 2070908022</p>
+    </div>
+
+    <div class="icons">
+        <img src="icon2.png" alt="">
+        <h3>email address</h3>
+        <p>abc123@gmail.com</p>
+        <p>def456@gmail.com</p>
+    </div>
+
+     <div class="icons">
+        <img src="icon3.png" alt="">
+        <h3>Office Address</h3>
+        <p>Badangpet, Hyderabad, India - 500058</p>
+    </div>
+
+</div>
+<div class="row">
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Number">
+        </div>
+        <div class="inputBox">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send message" class="btn">
+    </form>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15236.888942323658!2d78.52377427414734!3d17.304823310048693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba2360273a2c7%3A0xab98053e50dfd438!2sBadangpet%2C%20Telangana!5e0!3m2!1sen!2sin!4v1632142486494!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen></iframe>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Branch Location</h3>
+                <a href="#">Bdangpet</a>
+                <a href="#">Medchal</a>
+                <a href="#">Secundrabad</a>
+                
+            </div> 
+            
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Agents</a>
+                <a href="#">Contact</a>
+            </div> 
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#">My account</a>
+                <a href="#">My favorite</a>
+                <a href="#">My orders</a>
+            </div> 
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div> 
+
+        </div>
+
+        <div class="credit">@ all rights reserved</div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+</body>
+</html>
